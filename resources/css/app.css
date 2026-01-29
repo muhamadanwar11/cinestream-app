@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .glass {
+        @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(31, 38, 135, 0.37)];
+    }
+
+    .glass-dark {
+        @apply bg-gray-900/40 backdrop-blur-2xl border border-white/5 shadow-2xl;
+    }
+
+    .neon-text-purple {
+        text-shadow: 0 0 10px rgba(168, 85, 247, 0.5), 0 0 20px rgba(168, 85, 247, 0.3);
+    }
+
+    .neon-border-purple {
+        box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+    }
+
+    .animate-float {
+        animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+body {
+    background-color: #030712 !important;
+    /* bg-gray-950 */
+    color: #f3f4f6 !important;
+    /* text-gray-100 */
+}
