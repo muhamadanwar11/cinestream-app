@@ -9,15 +9,32 @@
     }
 
     .glass-dark {
-        @apply bg-gray-900/40 backdrop-blur-2xl border border-white/5 shadow-2xl;
+        @apply bg-gray-950/60 backdrop-blur-3xl border border-white/10 shadow-[0_20px_50px_rgba(0, 0, 0, 0.5)];
     }
 
-    .neon-text-purple {
-        text-shadow: 0 0 10px rgba(168, 85, 247, 0.5), 0 0 20px rgba(168, 85, 247, 0.3);
+    .premium-input {
+        @apply bg-white/5 border-white/10 text-white placeholder-gray-500 focus:border-purple-500 focus:ring-purple-500 rounded-2xl transition-all duration-300 backdrop-blur-md;
     }
 
-    .neon-border-purple {
-        box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+    .premium-button {
+        @apply bg-gradient-to-r from-purple-600 to-blue-600 text-white font-black uppercase tracking-[0.2em] rounded-2xl hover:scale-105 active:scale-95 shadow-xl shadow-purple-900/20 transition-all duration-300;
+    }
+
+    .animate-gradient-x {
+        background-size: 200% 200%;
+        animation: gradient-x 15s ease infinite;
+    }
+
+    @keyframes gradient-x {
+
+        0%,
+        100% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
     }
 
     .animate-float {

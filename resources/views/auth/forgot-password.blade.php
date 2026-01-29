@@ -1,6 +1,6 @@
 <x-guest-layout>
-    <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
-        {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+    <div class="mb-8 text-xs font-bold text-gray-500 uppercase tracking-widest leading-relaxed">
+        {{ __('Kehilangan kendali akses? Masukkan email Anda untuk menerima instruksi pemulihan identitas sinematik Anda.') }}
     </div>
 
     <!-- Session Status -->
@@ -12,13 +12,14 @@
         <!-- Email Address -->
         <div>
             <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
+            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required
+                autofocus />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
-        <div class="flex items-center justify-end mt-4">
-            <x-primary-button>
-                {{ __('Email Password Reset Link') }}
+        <div class="mt-8">
+            <x-primary-button class="w-full">
+                {{ __('Kirim Tautan Pemulihan') }}
             </x-primary-button>
         </div>
     </form>
