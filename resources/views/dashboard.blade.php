@@ -42,7 +42,7 @@
                             <div
                                 class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/20 border border-purple-500/30 text-purple-400 text-xs font-black uppercase tracking-[0.2em]">
                                 <span class="w-2 h-2 rounded-full bg-purple-400 animate-ping"></span>
-                                Ikhtisar Platform
+                                Tentang Platform
                             </div>
                             <h1 class="text-5xl md:text-6xl font-black text-white leading-tight">
                                 Pengalaman <span

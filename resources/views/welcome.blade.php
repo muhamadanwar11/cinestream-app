@@ -78,15 +78,15 @@
         <div class="space-y-4 mb-2">
             <span
                 class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-[10px] font-black uppercase tracking-[0.3em] animate-float">
-                Penemuan Sinematik Terbaik
+                Temukan tontonan terbaik anda
             </span>
         </div>
 
         <h1 class="text-6xl md:text-8xl font-black mb-8 tracking-tighter leading-[0.9]">
-            BEBASKAN <br />
+            TEMUKAN <br />
             <span
-                class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-blue-500 to-purple-400 animate-gradient-x">HASRAT
-                FILM ANDA</span>
+                class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-blue-500 to-purple-400 animate-gradient-x">KREATIVITAS
+                DAN IMAJINASI ANDA</span>
         </h1>
 
         <p class="text-lg md:text-2xl text-gray-400 max-w-3xl mb-12 font-medium leading-relaxed">
@@ -103,11 +103,11 @@
             @else
                 <a href="{{ route('login') }}"
                     class="group relative px-10 py-5 bg-gradient-to-br from-purple-600 to-blue-600 text-white font-black rounded-3xl transition shadow-2xl overflow-hidden hover:scale-105 active:scale-95">
-                    <span class="relative z-10 uppercase tracking-widest text-sm">Mulai Akses</span>
+                    <span class="relative z-10 uppercase tracking-widest text-sm">Masuk</span>
                 </a>
                 <a href="{{ route('register') }}"
                     class="px-10 py-5 glass rounded-3xl text-white font-black uppercase tracking-widest text-sm hover:bg-white/10 transition border border-white/10 hover:border-white/20">
-                    Buat Identitas
+                    Daftar
                 </a>
             @endauth
         </div>

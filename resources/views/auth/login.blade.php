@@ -36,7 +36,7 @@
 
         <div class="flex flex-col gap-6 mt-8">
             <x-primary-button class="w-full">
-                {{ __('Masuk Ke Sistem') }}
+                {{ __('Login') }}
             </x-primary-button>
 
             @if (Route::has('password.request'))
